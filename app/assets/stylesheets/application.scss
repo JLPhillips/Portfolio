@@ -1,0 +1,89 @@
+@import "foundation_and_overrides";
+/* Add imports of custom sass/scss files here *//*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+
+ *= require_tree .
+ */
+@import url(http://fonts.googleapis.com/css?family=Tenor+Sans);
+body {
+  background: url('bg2.png') fixed center no-repeat;
+  background-size: cover;
+  font-family: 'Tenor Sans', sans-serif;
+  color: #444444;
+  .container {
+    padding-top: 4%;
+    width: 82%;
+    margin: auto;
+
+    h1 {
+      font-family: 'Tenor Sans', sans-serif;
+      text-align: center;
+    }
+    img {
+      height: 100px;
+      width: auto;
+      float: left;
+      margin: 10px;
+      border: 5px solid #5b5a5a;
+      &:hover {
+        -webkit-transform: scale(4);
+        -moz-transform: scale(4);
+        -ms-transform: scale(4);
+        -o-transform: scale(4);
+        transform: scale(4);
+      }
+    }
+  }
+  .button-container {
+    width: 300px;
+    height: 230px;
+    margin: auto;
+    padding-top: 20%;
+    margin-bottom: 20%;
+    .graphic, .web {
+      background-color: #444444;
+      text-decoration: none;
+      width: 300px;
+      height: 100px;
+      margin-bottom: 30px;
+      &:hover {
+        background-color: #5b5a5a;
+      }
+      h2 {
+        a {
+          color: white;
+          text-align: center;
+          font-family: 'Tenor Sans', sans-serif;
+        }
+      }
+    }
+  }
+
+
+  .footer {
+    width: 100%;
+    margin: 20px auto;
+    h6 {
+      color: #444444;
+      text-align: center;
+      font-family: 'Tenor Sans', sans-serif;
+    }
+  }
+  .top-bar {
+    .left, .right, .name {
+      a {
+        font-family: 'Tenor Sans', sans-serif;
+      }
+    }
+  }
+}
