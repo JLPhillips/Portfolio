@@ -20,6 +20,25 @@ body {
   background-size: cover;
   font-family: 'Tenor Sans', sans-serif;
   color: #444444;
+
+  .left-bracket, .right-bracket {
+    position: absolute;
+    top: 135px;
+    img {
+      height: 350px;
+      width: auto;
+
+    }
+  }
+
+  .left-bracket {
+    left: 240px;
+  }
+
+  .right-bracket {
+    left: 650px;
+  }
+
   .container {
     padding-top: 4%;
     width: 82%;
